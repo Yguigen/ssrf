@@ -11,43 +11,55 @@ services:
   ssrfweb1:
     image: registry.cn-hangzhou.aliyuncs.com/jinduoduo/ssrf_web:v1
     ports:
-    - 9090:80
+    - 9091:80
     networks:
       ssrf_v: 
         ipv4_address: 172.72.23.21
  
   ssrfweb2: 
     image: registry.cn-hangzhou.aliyuncs.com/jinduoduo/ssrf_web:v2
+    ports:
+    - 9092:80
     networks: 
       ssrf_v:
         ipv4_address: 172.72.23.22
 
   ssrfweb3:
     image: registry.cn-hangzhou.aliyuncs.com/jinduoduo/ssrf_web:v3
+    ports:
+    - 9093:80
     networks:
       ssrf_v:
         ipv4_address: 172.72.23.23
 
   ssrfweb4:
     image: registry.cn-hangzhou.aliyuncs.com/jinduoduo/ssrf_web:v4
+    ports:
+    - 9094:80
     networks:
       ssrf_v:
         ipv4_address: 172.72.23.24
 
   ssrfweb5:
     image: registry.cn-hangzhou.aliyuncs.com/jinduoduo/ssrf_web:v5
+    ports:
+    - 9095:80
     networks:
       ssrf_v:
         ipv4_address: 172.72.23.25
 
   ssrfweb6:
     image: registry.cn-hangzhou.aliyuncs.com/jinduoduo/ssrf_web:v6
+    ports:
+    - 9096:80
     networks:
       ssrf_v:
         ipv4_address: 172.72.23.26
 
   ssrfweb7:
     image: registry.cn-hangzhou.aliyuncs.com/jinduoduo/ssrf_web:v7
+    ports:
+    - 9097:80
     networks:
       ssrf_v:
         ipv4_address: 172.72.23.27
